@@ -2,6 +2,7 @@ from exceptions import InvalidRequest
 
 """Класс запрос"""
 
+
 class Request:
     def __init__(self, request):
         splitted_request = request.lower().split(' ')

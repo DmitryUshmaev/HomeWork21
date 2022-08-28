@@ -1,5 +1,6 @@
 """Исключения и ошибки"""
 
+
 class BaseError(Exception):
     message = "Неожиданная ошибка"
 
