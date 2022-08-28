@@ -4,32 +4,28 @@ from abc import ABC, abstractmethod
 
 
 class Storage(ABC):
-    """Добавить товар"""
 
     @abstractmethod
     def add(self, name: str, amount: int):
+        """Добавить товар"""
         pass
-
-    """Удалить товар"""
 
     @abstractmethod
     def remove(self, name: str, amount: int):
+        """Удалить товар"""
         pass
-
-    """Вернуть количество свободных мест"""
 
     @abstractmethod
     def get_free_space(self):
+        """Вернуть количество свободных мест"""
         pass
-
-    """Возвращает сожержание склада в словаре"""
 
     @abstractmethod
     def get_items(self):
+        """Возвращает сожержание склада в словаре"""
         pass
-
-    """Возвращает количество уникальных товаров"""
 
     @abstractmethod
     def get_unique_items_count(self):
+        """Возвращает количество уникальных товаров"""
         pass
